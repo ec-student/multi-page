@@ -60,6 +60,12 @@ figcaption {
   margin-top: 0.5rem;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Dela Gothic One", Verdana, sans-serif;
+}
+
 p {
   font: 1.05em/1.5 Georgia, serif;
 }
