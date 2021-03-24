@@ -1,0 +1,115 @@
+/* 
+Reading:
+https://www.filamentgroup.com/lab/how-we-learned-to-leave-body-font-size-alone.html
+*/
+
+html {
+  font: 100%/1.15 sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  font-family: sans-serif;
+}
+
+/* Layout breakpoint without media query */
+
+body {
+  max-width: 48rem;
+  padding: 0 1rem;
+  margin: 1rem auto;
+}
+
+/*
+Reading:
+https://alistapart.com/article/fluid-images/
+*/
+
+/* Responsive images */
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+nav ul {
+  list-style: none url(//:0); /* Remove bullets, without removing semantics */
+  list-style-type: none;
+  list-style-image: url(//:0);
+  list-style-position: outside;
+  padding-left: 0; /* Remove left padding for flush left appearance */
+}
+
+nav li {
+  margin-top: 1rem; 
+}
+
+figure {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+figure img {
+  border: 1px solid #ccc;
+}
+
+figcaption {
+  font-size: 0.8em;
+  line-height: 1.3;
+  margin-top: 0.5rem;
+}
+
+p {
+  font: 1.05em/1.5 Georgia, serif;
+}
+
+/* Breakpoint for wider layout */
+
+/* 
+Reading:
+https://cloudfour.com/thinks/the-ems-have-it-proportional-media-queries-ftw/ 
+*/
+
+@media (min-width: 48em) {
+  
+/* Rescale all text and/or em-based elements to improve readability (and overall user experience) */
+  
+  body {
+    font-size: 125%;
+  }
+  
+/*
+Resource:
+https://learncssgrid.com
+*/
+  
+/* Switch to horizontal layout */
+  
+  nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 1rem;
+  }
+  
+  nav li {
+     margin-top: 0;
+  }
+  
+/*
+Resource:
+https://developer.mozilla.org/en-US/docs/Web/CSS/float
+*/
+  
+/* Create text wrap and figure to the right */
+  
+  #fig-1 {
+    float: right;
+    width: 33.333333333333333%;
+    margin-top: 0;
+    margin-left: 1rem;
+    margin-bottom: 0;
+  }
+
+}
