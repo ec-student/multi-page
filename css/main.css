@@ -73,9 +73,9 @@ p {
 /* Links */
 
 a {
-  color: #33f;
+  color: #039;
   text-decoration: none;
-  border-bottom: 1px solid #33f;
+  border-bottom: 2px solid #039;
 }
 
 a:hover {
