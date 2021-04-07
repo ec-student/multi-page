@@ -70,6 +70,22 @@ p {
   font: 1.05em/1.5 Georgia, serif;
 }
 
+/* Links */
+
+a {
+  color: #33f;
+  text-decoration: none;
+  border-bottom: 1px solid #33f;
+}
+
+a:hover {
+  border-color: #f60;
+}
+
+a:focus {
+  color: #f60;
+}
+   
 /* Breakpoint for wider layout */
 
 /* 
