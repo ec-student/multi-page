@@ -5,9 +5,6 @@ https://www.filamentgroup.com/lab/how-we-learned-to-leave-body-font-size-alone.h
 
 html {
   font: 100%/1.15 sans-serif;
-  font-size: 100%;
-  line-height: 1.15;
-  font-family: sans-serif;
 }
 
 /* Layout breakpoint without media query */
